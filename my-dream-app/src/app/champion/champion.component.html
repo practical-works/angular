@@ -1,0 +1,40 @@
+<div
+  class="media border rounded bg-light p-3"
+  [ambHighlight]="champion.tags[0].toLowerCase() === 'assassin'"
+>
+  <img
+    src="{{ championImageSrc }}"
+    class="mr-3"
+    alt="{{ champion.name }}"
+    title="{{ champion.name }}"
+  />
+  <div class="media-body">
+    <h5 class="mt-0 mb-1">
+      {{ champion.name }}, {{ champion.title }}
+      <span>
+        <a
+          title="{{ tag }}"
+          href="https://www.google.com/search?q={{ tag }}+leagueoflegends"
+          target="_blank"
+          class="badge badge-pill badge-secondary border mr-1"
+          *ngFor="let tag of champion.tags"
+        >
+          {{ tag }}
+        </a>
+      </span>
+    </h5>
+    <p class="lead" title="{{ champion.blurb }}">
+      {{ champion.blurb | slice: 0:100 }}...
+    </p>
+    <div class="pt-2">
+      <button
+        type="button"
+        title="Remove"
+        class="btn btn-sm btn-danger d-inline"
+        (click)="onChampionRemove()"
+      >
+        ✖ Remove {{ champion.name }}
+      </button>
+    </div>
+  </div>
+</div>

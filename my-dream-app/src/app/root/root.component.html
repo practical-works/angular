@@ -1,0 +1,19 @@
+<div class="container pt-5">
+  <div class="row">
+    <div class="col">
+      <div class="">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search from {{ champions.length }} champions..."
+          [(ngModel)]="query"
+        />
+      </div>
+        <amb-champion
+        *ngFor="let champ of champions | slice: 140: 145 | filter: query"
+        [obj]="champ"
+        (remove)="removeChampion($event)"
+      ></amb-champion>
+    </div>
+  </div>
+</div>

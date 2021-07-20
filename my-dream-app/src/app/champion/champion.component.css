@@ -1,0 +1,9 @@
+.card {
+  border-radius: 20px;
+  transition: 1s;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #EEE;
+  box-shadow: 0px 0px 10px black;
+}

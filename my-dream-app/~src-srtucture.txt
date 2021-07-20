@@ -1,0 +1,52 @@
+■ src
+│
+│   ● main.ts
+│   ● index.html
+│   ● styles.css|scss|sass
+│   ● favicon.ico
+│
+├───■ app
+│   │
+│   │   ● app.module.ts
+│   │   ● app-routing.module.ts
+│   │   ● app.component.ts
+│   │   ● app.component.spec.ts
+│   │   ● app.component.html
+│   │   ● app.component.css|scss|sass
+│   │
+│   ├───■ core
+│   │       ● *.service.ts
+│   │       ● *.service.spec.ts
+│   │
+│   ├───■ feature1
+│   │       ● feature1.module.ts
+│   │       ● feature1-routing.module.ts
+│   │       ● feature1.component.ts
+│   │       ● feature1.component.spec.ts
+│   │       ● feature1.component.html
+│   │       ● feature1.component.css|scss|sass
+│   │
+│   ├───■ feature2
+│   │   │    ● feature2-feature.module.ts
+│   │   │    ● feature2-feature-routing.module.ts
+│   │   │    ● feature2-feature.component.ts
+│   │   │    ● feature2-feature.component.spec.ts
+│   │   │    ● feature2-feature.component.html
+│   │   │    ● feature2-feature.component.css|scss|sass
+│   │   │
+│   │   ├───■ sub-feature1
+│   │   │       ● sub-feature1.component.ts
+│   │   │       ● sub-feature1.component.spec.ts
+│   │   │       ● sub-feature1.component.html
+│   │   │       ● sub-feature1.component.css|scss|sass
+│   │   │
+│   │   └───■ shared
+│   │            *.component|service|pipe|model|...etc|*.ts|html|css|spec.ts
+│   │
+│   └────■ shared
+│           shared.module.ts
+│           *.component|service|pipe|model|...etc|*.ts|spec.ts
+│
+└───■ assets
+    │
+    └───■

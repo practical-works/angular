@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "folder_exclude_patterns": [
+        "node_modules",
+        "e2e",
+        "src/environments"
+      ],
+      "file_exclude_patterns": [
+        ".*",
+        "ts*",
+        "karma.conf.js",
+        "README.md",
+        "package-lock.json",
+        "browserslist",
+        "polyfills.ts",
+        "test.ts"
+      ]
+    }
+  ]
+}
